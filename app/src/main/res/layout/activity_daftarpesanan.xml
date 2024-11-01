@@ -1,0 +1,39 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".daftarpesanan">
+
+    <!-- TextView untuk Alamat Pengerjaan -->
+    <TextView
+        android:id="@+id/textAlamatPengerjaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat Pengerjaan:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="8dp"/>
+
+    <!-- TextView untuk Catatan Tambahan -->
+    <TextView
+        android:id="@+id/textCatatanTambahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catatan Tambahan:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textAlamatPengerjaan"
+        android:padding="8dp"/>
+
+    <!-- TextView untuk Layanan -->
+    <TextView
+        android:id="@+id/textLayanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layanan:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textCatatanTambahan"
+        android:padding="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

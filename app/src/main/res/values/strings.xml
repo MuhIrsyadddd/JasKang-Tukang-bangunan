@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">JasKang</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bentuk_oval">bentuk oval</string>
+    <string name="sambutan">Hai, Selamat Datang!</string>
+    <string name="subtitle_home">Pilih layanan sesuai kebutuhan</string>
+    <string name="banner">banner</string>
+    <string name="lanjut">Lanjut</string>
+    <string name="layanan">Kategori Layanan</string>
+    <string name="menu_renovasi">Pembangunan Dan Perbaikan</string>
+    <string name="harga">Harga</string>
+    <string name="layananwa">Konfirmasi Dan Konsultasi Pesanan</string>
+    <string name="tentang">Tentang</string>
+</resources>

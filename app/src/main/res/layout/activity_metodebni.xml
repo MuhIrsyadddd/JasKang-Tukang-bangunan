@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".metodebni">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:id="@+id/virtual_account_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_background"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/virtual_account_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Rek : 2222"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewLayanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Layanan: "
+            android:textSize="16sp"
+            android:layout_below="@id/virtual_account_box"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewTotalHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Harga: Rp 0"
+            android:textSize="16sp"
+            android:layout_below="@id/textViewLayanan"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewBiayaLayanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biaya Layanan: Rp 2500"
+            android:textSize="16sp"
+            android:layout_below="@id/textViewTotalHarga"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewTotalBiaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: Rp 0"
+            android:textSize="16sp"
+            android:layout_below="@id/textViewBiayaLayanan"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewTanggalSekarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Sekarang: "
+            android:textSize="16sp"
+            android:layout_below="@id/textViewTotalBiaya"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewJamSekarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jam Sekarang: "
+            android:textSize="16sp"
+            android:layout_below="@id/textViewTanggalSekarang"
+            android:layout_marginTop="8dp"/>
+
+        <!-- TextView for Countdown Timer -->
+        <TextView
+            android:id="@+id/textViewCountdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waktu Tersisa: 24:00:00"
+            android:textSize="16sp"
+            android:layout_below="@id/textViewJamSekarang"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewInfoPembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Silahkan lakukan pembayaran sebelum 1 hari setelah check out"
+            android:textSize="14sp"
+            android:layout_below="@id/textViewCountdown"
+            android:layout_marginTop="16dp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/buttonPembayaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pembayaran"
+            android:layout_below="@id/textViewInfoPembayaran"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>

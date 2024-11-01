@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".layananjasa">
+
+    <CheckBox
+        android:id="@+id/checkboxPembangunanRumah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembangunan Rumah"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxPerbaikanAtap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perbaikan Atap"
+        android:layout_below="@id/checkboxPembangunanRumah"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxPerbaikanPipaAir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perbaikan Pipa Air"
+        android:layout_below="@id/checkboxPerbaikanAtap"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxPerbaikanListrik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perbaikan Listrik"
+        android:layout_below="@id/checkboxPerbaikanPipaAir"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxPengecatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengecatan"
+        android:layout_below="@id/checkboxPerbaikanListrik"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxInstalasiListrik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instalasi Listrik"
+        android:layout_below="@id/checkboxPengecatan"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxPemasanganPompa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pemasangan Pompa"
+        android:layout_below="@id/checkboxInstalasiListrik"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxPembangunanPondasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembuatan Sumur"
+        android:layout_below="@id/checkboxPemasanganPompa"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutJumlahHari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxPembangunanPondasi"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/textJumlahHari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah hari: 1"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonKurangHari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_toEndOf="@id/textJumlahHari"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/buttonTambahHari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_toEndOf="@id/buttonKurangHari"
+            android:layout_marginStart="8dp" />
+    </RelativeLayout>
+
+    <!-- Tambahkan EditText untuk memasukkan harga manual -->
+    <EditText
+        android:id="@+id/editTextHargaManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan harga manual"
+        android:inputType="number"
+        android:layout_below="@id/relativeLayoutJumlahHari"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/textTotalHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Harga: Rp 0"
+        android:textSize="16sp"
+        android:layout_below="@id/editTextHargaManual"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnLanjutPemesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTotalHarga"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Lanjut ke Pemesanan" />
+
+</RelativeLayout>

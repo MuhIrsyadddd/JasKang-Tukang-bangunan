@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pembangunanperbaikan">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="306dp"
+        android:layout_height="254dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/rumah" />
+
+    <TextView
+        android:id="@+id/textNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLogo"
+        android:layout_marginTop="16dp"
+        android:text="Nama"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNama"
+        android:layout_marginTop="8dp"
+        android:hint="Masukkan nama"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textAlamatPengerjaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNama"
+        android:layout_marginTop="16dp"
+        android:text="Alamat Pengerjaan"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editAlamatPengerjaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAlamatPengerjaan"
+        android:layout_marginTop="20dp"
+        android:hint="Masukkan alamat pengerjaan"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textCatatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editAlamatPengerjaan"
+        android:layout_marginTop="16dp"
+        android:text="Catatan Tambahan (Opsional)"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editCatatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textCatatan"
+        android:layout_marginTop="8dp"
+        android:hint="Masukkan catatan tambahan"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editCatatan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Lanjut Ke pemesanan" />
+
+</RelativeLayout>

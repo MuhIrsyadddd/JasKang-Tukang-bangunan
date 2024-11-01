@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailpembayaran">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewCentangHijau"
+            android:layout_width="206dp"
+            android:layout_height="96dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_centang_hijau" />
+
+        <TextView
+            android:id="@+id/textViewPembayaranBerhasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemesanan Sedang Diproses"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/imageViewCentangHijau"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/textViewLayananDipesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Layanan yang dipesan"
+            android:textSize="16sp"
+            android:layout_below="@id/textViewPembayaranBerhasil"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewTanggalJam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal dan Jam"
+            android:textSize="16sp"
+            android:layout_below="@id/textViewLayananDipesan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewTotalBiaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Biaya"
+            android:textSize="16sp"
+            android:layout_below="@id/textViewTanggalJam"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonKembaliKeHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kembali ke Home"
+            android:layout_below="@id/textViewTotalBiaya"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp" />
+
+    </RelativeLayout>
+</ScrollView>
